@@ -1,0 +1,4 @@
+com\fullmoon\study\entity\Result.class
+com\fullmoon\study\service\RemoteResultService.class
+com\fullmoon\study\service\LocalResultService.class
+com\fullmoon\study\entity\Param.class

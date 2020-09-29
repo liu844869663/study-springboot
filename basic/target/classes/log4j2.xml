@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="INFO" monitorInterval="30">
+	<appenders>
+		<!--这个输出控制台的配置 -->
+		<Console name="Console" target="SYSTEM_OUT">
+			<!-- 设置输出日志级别(高于level),配置则输出,不匹配则拒绝 -->
+			<ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY" />
+			<!--输出日志的格式 -->
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS}:%4p %t (%F:%L) - %m%n" />
+		</Console>
+		<!-- 输出到文件，按天或者超过100MB分割 -->
+		<RollingFile name="RollingFile" fileName="logs/trace.log"
+			append="true" filePattern="logs/$${date:yyyy-MM}/trace-%d{yyyy-MM-dd}-%i.log.gz">
+			<!-- 需要记录的级别 -->
+			<ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY" />
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS}:%4p %t (%F:%L) - %m%n" />
+			<Policies>
+				<!-- <OnStartupTriggeringPolicy /> -->
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="100 MB" />
+			</Policies>
+		</RollingFile>
+		<!-- 输出告警和错误到文件，按天或者超过100MB分割 -->
+		<RollingFile name="RollingErrorFile" fileName="logs/error.log"
+			append="true" filePattern="logs/$${date:yyyy-MM}/error-%d{yyyy-MM-dd}-%i.log.gz">
+			<!-- 需要记录的级别 -->
+			<ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY" />
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS}:%4p %t (%F:%L) - %m%n" />
+			<Policies>
+				<!-- <OnStartupTriggeringPolicy /> -->
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="100 MB" />
+			</Policies>
+		</RollingFile>
+	</appenders>
+	<loggers>
+		<!--过滤掉spring和mybatis的一些无用的DEBUG信息 -->
+		<!--<logger name="org.springframework" level="WARN" />
+		<logger name="org.mybatis" level="WARN" />-->
+		<!-- <logger name="org.apache.zookeeper.ClientCnxn" level="ERROR" /> -->
+		<root level="INFO" includeLocation="true">
+			<appender-ref ref="Console" />
+			<appender-ref ref="RollingFile" />
+			<appender-ref ref="RollingErrorFile" />
+		</root>
+	</loggers>
+</configuration>

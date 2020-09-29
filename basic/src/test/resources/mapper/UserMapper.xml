@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fullmoon.study.dao.UserMapper">
+    <resultMap id="BaseResultMap" type="com.fullmoon.study.entity.User">
+        <id column="id" javaType="INTEGER" property="id" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="age" jdbcType="INTEGER" property="age" />
+        <result column="gender" jdbcType="VARCHAR" property="gender" />
+        <result column="phone" jdbcType="VARCHAR" property="phone" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+        <result column="addr" jdbcType="VARCHAR" property="addr" />
+    </resultMap>
+
+    <select id="queryUserInfo" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+		SELECT
+			id,`name`,age,gender,phone,password,addr
+		FROM
+			user
+		WHERE
+			id = #{id,jdbcType=INTEGER}
+	</select>
+
+    <select id="queryUserByName" parameterType="java.lang.String" resultMap="BaseResultMap">
+		SELECT
+			id,`name`,age,gender,phone,password,addr
+		FROM
+			user
+		WHERE
+			`name` = #{name,jdbcType=VARCHAR}
+	</select>
+
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id"
+            parameterType="com.fullmoon.study.entity.User" >
+        INSERT INTO
+          user(`name`,age,gender,phone,password,addr)
+        VALUES (
+          #{name,jdbcType=VARCHAR},
+          #{age,jdbcType=INTEGER},
+          #{gender,jdbcType=VARCHAR},
+          #{phone,jdbcType=VARCHAR},
+          <choose>
+            <when test="password != null and password.length() &gt; 0">
+                #{password,jdbcType=VARCHAR},
+            </when>
+            <otherwise>
+                "123",
+            </otherwise>
+          </choose>
+          #{addr,jdbcType=VARCHAR}
+        )
+    </insert>
+
+    <select id="queryUserByIds" parameterType="java.util.List" resultMap="BaseResultMap">
+        SELECT
+			id,`name`,age,gender,phone,password,addr
+		FROM
+			user
+		WHERE
+            id IN
+			<foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+                #{item}
+            </foreach>
+    </select>
+</mapper>

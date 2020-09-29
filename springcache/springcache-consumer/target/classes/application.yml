@@ -1,0 +1,34 @@
+#以下是spring相关公共配置
+spring:
+  application:
+    name: springcache-consumer # 应用名称
+  #其他配置项对应指定的默认环境
+  profiles:
+    active: test
+#以下是通用公共配置
+server:
+  port: 9099
+  servlet:
+    context-path: /springcache
+#以下dubbo相关公共配置
+study:
+  service:
+    version: 1.0.0
+dubbo:
+  scan:
+    basePackages: com.fullmoon.study
+  application:
+    id: springcache-consumer
+    name: springcache-consumer
+    qos-port: 0
+  protocol:
+    id: dubbo
+    name: dubbo
+    status: server
+  registry:
+    id: remote-registry
+    address: zookeeper://192.250.110.153:2181
+    protocol: zookeeper
+
+
+
