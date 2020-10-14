@@ -1,13 +1,12 @@
 package com.fullmoon.study.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.alicp.jetcache.anno.CachePenetrationProtect;
-import com.alicp.jetcache.anno.CacheRefresh;
-import com.alicp.jetcache.anno.CacheType;
-import com.alicp.jetcache.anno.Cached;
+import com.alicp.jetcache.Cache;
+import com.alicp.jetcache.anno.*;
 import com.fullmoon.study.entity.Child;
 import com.fullmoon.study.entity.People;
 import com.fullmoon.study.service.ChildService;
+import org.springframework.util.CollectionUtils;
 
 import java.util.List;
 
@@ -20,6 +19,10 @@ import java.util.List;
 )
 public class ChildServiceImpl implements ChildService {
 
+    @CreateCache(name = "childCache" , localLimit = 50 ,cacheType = CacheType.LOCAL)
+    @CachePenetrationProtect
+    Cache<String, Child> childCache;
+
     @Override
     @Cached(name = "ChildService.getChildren", expire = 300, localLimit = 50, cacheType = CacheType.BOTH)
     @CacheRefresh(refresh = 60, stopRefreshAfterLastAccess = 60 * 2)
@@ -30,6 +33,18 @@ public class ChildServiceImpl implements ChildService {
         }catch(Exception e) {
             Thread.currentThread().interrupt();
         }
-        return people.getChildren();
+        List<Child> children = people.getChildren();
+        if (!CollectionUtils.isEmpty(children)){
+            for (Child child : children){
+                childCache.put(child.getName(), child);
+            }
+        }
+        return children;
+    }
+
+    @Override
+    public Child getChildByName(String name) {
+        Child defaultChild = new Child();
+        return childCache.computeIfAbsent(name , (k) -> defaultChild);
     }
 }

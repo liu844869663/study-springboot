@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface ChildService {
     public List<Child> getChildren(People people);
+
+    public Child getChildByName(String name);
 }
