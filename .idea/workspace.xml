@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="df0a0e80-0175-4e12-aa6d-e2075dfb1aa8" name="Default Changelist" comment="jetcache的demo工程中新增@CreateCache注解创建缓存实例">
+      <change afterPath="$PROJECT_DIR$/basic/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/basic/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/basic/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/target/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic/target/classes/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/target/test-classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/target/test-classes/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/target/test-classes/com/fullmoon/study/dao/test/UserMapperTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/target/test-classes/com/fullmoon/study/service/test/UserServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/target/test-classes/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/target/test-classes/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jetcache/jetcache-api/target/classes/com/fullmoon/study/service/ChildService.class" beforeDir="false" afterPath="$PROJECT_DIR$/jetcache/jetcache-api/target/classes/com/fullmoon/study/service/ChildService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jetcache/jetcache-consumer/target/classes/com/fullmoon/study/controller/ChildController.class" beforeDir="false" afterPath="$PROJECT_DIR$/jetcache/jetcache-consumer/target/classes/com/fullmoon/study/controller/ChildController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jetcache/jetcache-provider/target/classes/com/fullmoon/study/service/impl/ChildServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/jetcache/jetcache-provider/target/classes/com/fullmoon/study/service/impl/ChildServiceImpl.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../application/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\application\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProjectId" id="1iAESXIj7MvkyPVv6YhELIji5lf" />
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/basic/src/main/resources" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDK Location" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspaces\idea\study-springboot\basic\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+      <command value="mvn clean install -Dmaven.test.skip=true" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="ChildServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fullmoon.study.service.impl.ChildServiceImpl" />
+      <module name="jetcache-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fullmoon.study.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="jetcache-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fullmoon.study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fullmoon.study.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JetCacheConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="jetcache-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fullmoon.study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fullmoon.study.JetCacheConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringCacheProviderLocalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springcache-provider-local" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fullmoon.study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fullmoon.study.SpringCacheProviderLocalApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Spring Boot.JetCacheConsumerApplication" />
+        <item itemvalue="Application.ChildServiceImpl" />
+        <item itemvalue="Spring Boot.SpringCacheProviderLocalApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="df0a0e80-0175-4e12-aa6d-e2075dfb1aa8" name="Default Changelist" comment="" />
+      <created>1601341996610</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601341996610</updated>
+      <workItem from="1601342129655" duration="607000" />
+      <workItem from="1602652670612" duration="3743000" />
+      <workItem from="1602662457428" duration="4766000" />
+      <workItem from="1602668517161" duration="485000" />
+      <workItem from="1602750233844" duration="1862000" />
+      <workItem from="1602753154483" duration="1842000" />
+      <workItem from="1603158629596" duration="184000" />
+      <workItem from="1603362030394" duration="5000" />
+      <workItem from="1603510783501" duration="25000" />
+      <workItem from="1605622042175" duration="2080000" />
+    </task>
+    <task id="LOCAL-00001" summary="jetcache的demo工程中新增@CreateCache注解创建缓存实例">
+      <created>1602665575955</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602665575956</updated>
+    </task>
+    <task id="LOCAL-00002" summary="@Create注解的缓存实例新增初始化方式">
+      <created>1602754178106</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602754178107</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="jetcache的demo工程中新增@CreateCache注解创建缓存实例" />
+    <MESSAGE value="@Create注解的缓存实例新增初始化方式" />
+    <option name="LAST_COMMIT_MESSAGE" value="@Create注解的缓存实例新增初始化方式" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="343" y="138" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605623228125">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="343" y="138" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1500.960@0.0.1500.960" timestamp="1605623228125" />
+    <state x="556" y="185" key="#com.intellij.ide.util.MemberChooser" timestamp="1602662742551">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="556" y="185" key="#com.intellij.ide.util.MemberChooser/0.0.1500.960@0.0.1500.960" timestamp="1602662742551" />
+    <state x="93" y="93" width="1313" height="773" key="DiffContextDialog" timestamp="1602669002069">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="93" y="93" width="1313" height="773" key="DiffContextDialog/0.0.1500.960@0.0.1500.960" timestamp="1602669002069" />
+    <state width="1458" height="175" key="GridCell.Tab.0.bottom" timestamp="1605624005335">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="175" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1605624005335" />
+    <state width="1458" height="175" key="GridCell.Tab.0.center" timestamp="1605624005335">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="175" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1605624005335" />
+    <state width="1458" height="175" key="GridCell.Tab.0.left" timestamp="1605624005335">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="175" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1605624005335" />
+    <state width="1458" height="175" key="GridCell.Tab.0.right" timestamp="1605624005335">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="175" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1605624005335" />
+    <state width="1458" height="281" key="GridCell.Tab.1.bottom" timestamp="1602669002017">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="281" key="GridCell.Tab.1.bottom/0.0.1500.960@0.0.1500.960" timestamp="1602669002017" />
+    <state width="1458" height="281" key="GridCell.Tab.1.center" timestamp="1602669002016">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="281" key="GridCell.Tab.1.center/0.0.1500.960@0.0.1500.960" timestamp="1602669002016" />
+    <state width="1458" height="281" key="GridCell.Tab.1.left" timestamp="1602669002016">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="281" key="GridCell.Tab.1.left/0.0.1500.960@0.0.1500.960" timestamp="1602669002016" />
+    <state width="1458" height="281" key="GridCell.Tab.1.right" timestamp="1602669002017">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="281" key="GridCell.Tab.1.right/0.0.1500.960@0.0.1500.960" timestamp="1602669002017" />
+    <state width="1458" height="316" key="GridCell.Tab.2.bottom" timestamp="1602667232680">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="316" key="GridCell.Tab.2.bottom/0.0.1500.960@0.0.1500.960" timestamp="1602667232680" />
+    <state width="1458" height="316" key="GridCell.Tab.2.center" timestamp="1602667232679">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="316" key="GridCell.Tab.2.center/0.0.1500.960@0.0.1500.960" timestamp="1602667232679" />
+    <state width="1458" height="316" key="GridCell.Tab.2.left" timestamp="1602667232679">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="316" key="GridCell.Tab.2.left/0.0.1500.960@0.0.1500.960" timestamp="1602667232679" />
+    <state width="1458" height="316" key="GridCell.Tab.2.right" timestamp="1602667232680">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="316" key="GridCell.Tab.2.right/0.0.1500.960@0.0.1500.960" timestamp="1602667232680" />
+    <state x="252" y="124" key="SettingsEditor" timestamp="1605622897711">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="252" y="124" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1605622897711" />
+    <state x="343" y="213" key="Vcs.Push.Dialog.v2" timestamp="1602754181782">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="343" y="213" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1602754181782" />
+    <state x="411" y="224" width="672" height="677" key="run.anything.popup" timestamp="1605623364158">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="411" y="224" width="672" height="677" key="run.anything.popup/0.0.1500.960@0.0.1500.960" timestamp="1605623364158" />
+    <state x="413" y="206" width="672" height="678" key="search.everywhere.popup" timestamp="1605623405020">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="413" y="206" width="672" height="678" key="search.everywhere.popup/0.0.1500.960@0.0.1500.960" timestamp="1605623405020" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/alicp/jetcache/jetcache-core/2.5.4/jetcache-core-2.5.4-sources.jar!/com/alicp/jetcache/AbstractCache.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/alicp/jetcache/jetcache-core/2.5.4/jetcache-core-2.5.4-sources.jar!/com/alicp/jetcache/AbstractCache.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_251/src.zip!/java/util/HashMap.java</url>
+          <line>626</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

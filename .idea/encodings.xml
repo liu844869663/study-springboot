@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/basic/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jetcache/jetcache-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jetcache/jetcache-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jetcache/jetcache-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcache/springcache-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcache/springcache-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcache/springcache-provider-local/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcache/springcache-provider-remote/src/main/java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

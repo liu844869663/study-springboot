@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/basic/basic.iml" filepath="$PROJECT_DIR$/basic/basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jetcache/jetcache.iml" filepath="$PROJECT_DIR$/jetcache/jetcache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jetcache/jetcache-api/jetcache-api.iml" filepath="$PROJECT_DIR$/jetcache/jetcache-api/jetcache-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jetcache/jetcache-consumer/jetcache-consumer.iml" filepath="$PROJECT_DIR$/jetcache/jetcache-consumer/jetcache-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jetcache/jetcache-provider/jetcache-provider.iml" filepath="$PROJECT_DIR$/jetcache/jetcache-provider/jetcache-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty/netty.iml" filepath="$PROJECT_DIR$/netty/netty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcache/springcache.iml" filepath="$PROJECT_DIR$/springcache/springcache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcache/springcache-api/springcache-api.iml" filepath="$PROJECT_DIR$/springcache/springcache-api/springcache-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcache/springcache-consumer/springcache-consumer.iml" filepath="$PROJECT_DIR$/springcache/springcache-consumer/springcache-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcache/springcache-provider-local/springcache-provider-local.iml" filepath="$PROJECT_DIR$/springcache/springcache-provider-local/springcache-provider-local.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcache/springcache-provider-remote/springcache-provider-remote.iml" filepath="$PROJECT_DIR$/springcache/springcache-provider-remote/springcache-provider-remote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-springboot.iml" filepath="$PROJECT_DIR$/study-springboot.iml" />
+    </modules>
+  </component>
+</project>
