@@ -29,7 +29,8 @@ server:
     min-spare-threads: 200
 mybatis:
   type-aliases-package: com.fullmoon.study.entity
-  mapper-locations: classpath:*Mapper.xml
+  mapper-locations: classpath:mapper/*.xml
+  config-location: classpath:mybatis-config.xml
 
 #测试环境
 ---
