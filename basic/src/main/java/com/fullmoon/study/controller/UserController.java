@@ -20,12 +20,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/hello", method = {RequestMethod.GET})
-    public String hello(String name){
-        log.info("name:{}", name);
-        return "Hello, " + name;
-    }
-
     @RequestMapping(value = "/queryUserInfo", method = {RequestMethod.GET})
     public Result<User> queryUser(Integer id){
         try{

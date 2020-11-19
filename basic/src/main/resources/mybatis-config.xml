@@ -24,20 +24,4 @@
 		<!-- 是否开启自动驼峰命名规则（camel case）映射，即从经典数据库列名A_COLUMN到经典Java属性名aColumn的类似映射 -->
 		<setting name="mapUnderscoreToCamelCase" value="true" />
 	</settings>
-	<plugins>
-		<!-- PageHelper 分页插件，配置参考：https://github.com/pagehelper/Mybatis-PageHelper -->
-		<plugin interceptor="com.github.pagehelper.PageInterceptor">
-			<!-- 使用哪种方言的分页方式，默认会检测数据库连接，自动选择合适的分页方式 -->
-			<property name="helperDialect" value="mysql"/>
-			<!-- 默认值为 false，该参数对使用 RowBounds 作为分页参数时有效。
-			当该参数设置为 true 时，会将 RowBounds 中的 offset 参数当成 pageNum 使用，可以用页码和页面大小两个参数进行分页 -->
-			<property name="offsetAsPageNum" value="true" />
-			<!-- 默认值为false，该参数对使用 RowBounds 作为分页参数时有效。
-			当该参数设置为true时，使用 RowBounds 分页会进行 count 查询 -->
-			<property name="rowBoundsWithCount" value="true" />
-			<!-- 默认值为 false，当该参数设置为 true 时，
-			如果 pageSize=0 或者 RowBounds.limit = 0 就会查询出全部的结果（相当于没有执行分页查询，但是返回结果仍然是 Page 类型）-->
-			<property name="pageSizeZero" value="true" />
-		</plugin>
-	</plugins>
 </configuration>

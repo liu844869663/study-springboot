@@ -36,8 +36,8 @@
 	</appenders>
 	<loggers>
 		<!--过滤掉 Spring 和 Mybatis 的一些无用的 DEBUG 信息 -->
-		<logger name="org.springframework" level="WARN"/>
-		<logger name="org.mybatis" level="WARN"/>
+		<logger name="org.springframework" level="INFO"/>
+		<logger name="org.mybatis" level="INFO"/>
 		<root level="INFO" includeLocation="true">
 			<appender-ref ref="Console"/>
 			<appender-ref ref="RollingFile"/>
