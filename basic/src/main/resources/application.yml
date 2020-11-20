@@ -1,3 +1,8 @@
+jasypt:
+  encryptor:
+    password: f77b2bcf9db04848ba9742254c25d996 # salt 盐值，需要和加密时使用的 salt 一致
+    algorithm: PBEWithMD5AndDES # 加密算法，需要和加密时使用的算法一致
+    string-output-type: hexadecimal # 密文格式，需要和加密时使用的输出格式一致
 server:
   port: 9092
   servlet:
@@ -57,4 +62,4 @@ spring:
     druid:
       url: jdbc:mysql://192.250.110.158:3306/gsfy_user?useUnicode=true&characterEncoding=utf8
       username: root
-      password: admin@951753
+      password: ENC(70EA8EBF557526106C1C9030CF217D2EF9405A25021FEB999575EEAD1841E70B) # Jasypt 密文格式：ENC(密文)
