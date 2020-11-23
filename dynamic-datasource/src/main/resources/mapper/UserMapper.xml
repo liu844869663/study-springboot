@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fullmoon.study.mapper.UserMapper">
+
+    <select id="queryUser" parameterType="java.lang.Integer" resultType="user">
+		SELECT
+			id,`name`,age,gender,phone,password,addr
+		FROM
+			user
+		WHERE
+			id = #{id,jdbcType=INTEGER}
+	</select>
+
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id" parameterType="user" >
+        INSERT INTO
+          user(`name`,age,gender,phone,password,addr)
+        VALUES (
+          #{name,jdbcType=VARCHAR},
+          #{age,jdbcType=INTEGER},
+          #{gender,jdbcType=VARCHAR},
+          #{phone,jdbcType=VARCHAR},
+          <choose>
+            <when test="password != null and password.length() &gt; 0">
+                #{password,jdbcType=VARCHAR},
+            </when>
+            <otherwise>
+                "123",
+            </otherwise>
+          </choose>
+          #{addr,jdbcType=VARCHAR}
+        )
+    </insert>
+
+    <select id="queryAddr" parameterType="int" resultType="addr">
+		SELECT
+			id,addr
+		FROM
+			addr
+		WHERE
+			id = #{id,jdbcType=INTEGER}
+	</select>
+
+    <insert id="insertAddr" useGeneratedKeys="true" keyProperty="id" parameterType="addr" >
+        INSERT INTO
+        addr(addr)
+        VALUES (
+        #{addr,jdbcType=VARCHAR}
+        )
+    </insert>
+
+</mapper>

@@ -20,6 +20,7 @@
         <module>jetcache</module>
         <module>springcache</module>
         <module>netty</module>
+        <module>dynamic-datasource</module>
     </modules>
 
 

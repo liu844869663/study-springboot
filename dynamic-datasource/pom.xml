@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>basic</artifactId>
+    <artifactId>dynamic-datasource</artifactId>
     <packaging>jar</packaging>
 
     <properties>
@@ -137,18 +137,10 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.54</version>
         </dependency>
-
-        <!-- jasypt 加密工具，https://github.com/ulisesbocchio/jasypt-spring-boot -->
-        <dependency>
-            <groupId>com.github.ulisesbocchio</groupId>
-            <artifactId>jasypt-spring-boot-starter</artifactId>
-            <version>3.0.3</version>
-        </dependency>
-
     </dependencies>
 
     <build>
-        <finalName>basic</finalName>
+        <finalName>dynamic-datasource</finalName>
         <!-- 配置相关插件 -->
         <plugins>
             <!-- appassembler-maven-plugin -->
@@ -175,13 +167,13 @@
                     <configurationSourceDirectory>src/main/resources</configurationSourceDirectory>
                     <includeConfigurationDirectoryInClasspath>true</includeConfigurationDirectoryInClasspath>
                     <!-- ${project.build.directory}:target, 文件存放的根目录 -->
-                    <assembleDirectory>${project.build.directory}/basic-assemble</assembleDirectory>
+                    <assembleDirectory>${project.build.directory}/dynamic-datasource</assembleDirectory>
                     <programs>
                         <program>
                             <!-- 启动类 -->
                             <mainClass>com.fullmoon.study.Application</mainClass>
                             <!-- 生成的文件名称：basic.sh -->
-                            <id>basic</id>
+                            <id>dynamic-datasource</id>
                             <!-- 配置JVM参数 -->
                             <jvmSettings>
                                 <extraArguments>
