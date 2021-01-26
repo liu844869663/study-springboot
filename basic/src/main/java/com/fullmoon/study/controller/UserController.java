@@ -6,9 +6,7 @@ import com.fullmoon.study.entity.User;
 import com.fullmoon.study.service.UserService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,17 +18,17 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/queryUserInfo", method = {RequestMethod.GET})
-    public Result<User> queryUser(Integer id){
-        try{
+    @GetMapping(value = "/queryUserInfo")
+    public Result<User> queryUser(@RequestParam("id") Integer id)  {
+        try {
             return Result.success().data(userService.queryUserInfo(id));
-        } catch (Exception e){
+        } catch (Exception e) {
             return Result.fail(e);
         }
-
     }
-    @RequestMapping(value = "/queryUserByName", method = {RequestMethod.GET})
-    public Result<List<User>> queryUser(String name) {
+
+    @GetMapping(value = "/queryUserByName")
+    public Result<List<User>> queryUser(@RequestBody String name) {
         try {
             return Result.success().data(userService.queryUserByName(name));
         } catch (Exception e) {
@@ -38,8 +36,8 @@ public class UserController {
         }
     }
 
-    @RequestMapping(value = "/addUser", method = {RequestMethod.GET})
-    public Result<Integer> addUser(User user){
+    @PostMapping("/addUser")
+    public Result<Integer> addUser(@RequestBody User user) {
         try {
             return Result.success().data(userService.insertUser(user));
         } catch (Exception e) {

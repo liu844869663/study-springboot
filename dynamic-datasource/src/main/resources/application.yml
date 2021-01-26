@@ -54,5 +54,6 @@ mybatis:
 pagehelper:
   helper-dialect: mysql
   reasonable: true # 分页合理化参数
+  page-size-zero: true # 每页数量为 0 则查询出全部的结果
   offset-as-page-num: true # 将 RowBounds 中的 offset 参数当成 pageNum 使用
   supportMethodsArguments: true # 支持通过 Mapper 接口参数来传递分页参数
